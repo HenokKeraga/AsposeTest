@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-04-10T19:18:19.697Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.92 Safari/537.36" etag="g0eaOuEOMS6GZ6wHUU0O" version="12.9.10" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2020-04-10T19:28:12.711Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.92 Safari/537.36" etag="IJ67yFWut7YIIbj9Rrvf" version="12.9.10" type="github" pages="2">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="2676" dy="420" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -143,6 +143,38 @@
         </mxCell>
         <mxCell id="ALF9PIYN2jSsoPnMfKdn-13" value="No matter" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="-joiQ_aJ1ymaEgmWdGMt-1">
           <mxGeometry x="414" y="340" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ALF9PIYN2jSsoPnMfKdn-17" value="&lt;pre style=&quot;font-family: &amp;#34;consolas&amp;#34; ; font-size: 8.3pt&quot;&gt;List&amp;lt;ReviewContractAction&amp;gt; reviewContractActionList&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="-joiQ_aJ1ymaEgmWdGMt-1">
+          <mxGeometry x="40" y="710" width="670" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ALF9PIYN2jSsoPnMfKdn-18" value="" style="shape=flexArrow;endArrow=classic;html=1;entryX=0.278;entryY=-0.092;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.278;exitY=1.014;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="-joiQ_aJ1ymaEgmWdGMt-1" source="ALF9PIYN2jSsoPnMfKdn-8" target="ALF9PIYN2jSsoPnMfKdn-17">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="200" y="670" as="sourcePoint" />
+            <mxPoint x="250" y="670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ALF9PIYN2jSsoPnMfKdn-19" value="" style="shape=flexArrow;endArrow=classic;html=1;" edge="1" parent="-joiQ_aJ1ymaEgmWdGMt-1" source="ALF9PIYN2jSsoPnMfKdn-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-110" y="600" as="sourcePoint" />
+            <mxPoint x="10" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ALF9PIYN2jSsoPnMfKdn-20" value="" style="shape=flexArrow;endArrow=classic;html=1;width=3;endSize=4.79;" edge="1" parent="-joiQ_aJ1ymaEgmWdGMt-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="800" y="400" as="sourcePoint" />
+            <mxPoint x="750" y="690" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ALF9PIYN2jSsoPnMfKdn-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="-joiQ_aJ1ymaEgmWdGMt-1" source="ALF9PIYN2jSsoPnMfKdn-23">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="365" y="1020" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ALF9PIYN2jSsoPnMfKdn-23" value="&lt;pre style=&quot;font-family: &amp;#34;consolas&amp;#34; ; font-size: 8.3pt&quot;&gt;&lt;span style=&quot;font-weight: bold&quot;&gt;boolean &lt;/span&gt;isEnableNonStdContractAppLink = isEnableNonStdContractAppLink(nonStdTasks);&lt;br&gt;&lt;span style=&quot;font-weight: bold&quot;&gt;boolean &lt;/span&gt;enableApproveLinksByNonStdTasks = isEnableApproveLinksByNonStdTasks(nonStdTasks);&lt;br&gt;&lt;span style=&quot;font-weight: bold&quot;&gt;boolean &lt;/span&gt;disableApproveLinkForUnifiedAmend = isDisableApproveLinkForUnifiedAmend(nonStdTasks,&lt;br&gt;      contractDetailSupp, unifiedAmendment);&lt;br&gt;&lt;span style=&quot;font-weight: bold&quot;&gt;boolean &lt;/span&gt;dmvl102Switch = getPreferenceSwitchValue(EDMConstants.&lt;span style=&quot;font-weight: bold ; font-style: italic&quot;&gt;DMVL_102_SWITCH&lt;/span&gt;);&lt;br&gt;&lt;span style=&quot;font-weight: bold&quot;&gt;boolean &lt;/span&gt;pcmApprovalNoteMailSent = dmvl102Switch&lt;br&gt;      ? checkContractMetaData(docId, EDMConstants.&lt;span style=&quot;font-weight: bold ; font-style: italic&quot;&gt;PENDING_PCM_APPROVAL_NOTE_MAIL_SENT&lt;/span&gt;)&lt;br&gt;      : &lt;span style=&quot;font-weight: bold&quot;&gt;false&lt;/span&gt;;&lt;br&gt;      &lt;span style=&quot;font-weight: bold&quot;&gt;boolean &lt;/span&gt;reworkLPAmendment = isReworkLPAmendment(docId);&lt;br&gt;&lt;span style=&quot;font-weight: bold&quot;&gt;boolean &lt;/span&gt;disapprovedByNonStdApprover = disapprovedByNonStdApprovers(disableApproveLinkForUnifiedAmend, contractDetailSupp, reworkLPAmendment,docId);    &lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="-joiQ_aJ1ymaEgmWdGMt-1">
+          <mxGeometry x="-90" y="790" width="880" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="ALF9PIYN2jSsoPnMfKdn-26" value="&lt;pre style=&quot;font-family: &amp;#34;consolas&amp;#34; ; font-size: 8.3pt&quot;&gt;reviewContractActionList.stream().forEach(reviewContractAction -&amp;gt; &lt;span&gt;{&lt;/span&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;span&gt;   &lt;/span&gt;setDisableAndRenderFlagsByAction(reviewContractAction, &lt;span&gt;isEnableNonStdContractAppLink&lt;/span&gt;,&lt;br&gt;         &lt;span&gt;enableApproveLinksByNonStdTasks&lt;/span&gt;, &lt;span&gt;disableApproveLinkForUnifiedAmend&lt;/span&gt;,&lt;br&gt;         &lt;span&gt;pcmApprovalNoteMailSent&lt;/span&gt;,&lt;span&gt;disapprovedByNonStdApprover&lt;/span&gt;);&lt;br&gt;&lt;span&gt;}&lt;/span&gt;);&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="-joiQ_aJ1ymaEgmWdGMt-1">
+          <mxGeometry x="-110" y="1060" width="910" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
