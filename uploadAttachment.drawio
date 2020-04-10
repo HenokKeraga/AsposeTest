@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-04-10T17:32:28.018Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.92 Safari/537.36" etag="OYardnUT-Vm4ejYc1VDQ" version="12.9.10" type="github">
+<mxfile host="app.diagrams.net" modified="2020-04-10T17:42:19.247Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.92 Safari/537.36" etag="w71AXfNRhzs16_EZtRrr" version="12.9.10" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="1022" dy="420" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2676" dy="420" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -47,19 +47,31 @@
           <mxGeometry x="270" y="880" width="260" height="50" as="geometry" />
         </mxCell>
         <mxCell id="LBpAUkLwmhWjywcLZa80-12" value="&lt;pre style=&quot;font-family: &amp;#34;consolas&amp;#34; ; font-size: 8.3pt&quot;&gt;ContractDetail contractDetail = &lt;span style=&quot;font-weight: bold&quot;&gt;e2eContractDAO&lt;/span&gt;.findContractDetailByLegalDocId(contractId);&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="70" y="950" width="970" height="60" as="geometry" />
+          <mxGeometry x="50" y="940" width="970" height="60" as="geometry" />
         </mxCell>
         <mxCell id="LBpAUkLwmhWjywcLZa80-13" value="&lt;pre style=&quot;font-family: &amp;#34;consolas&amp;#34; ; font-size: 8.3pt&quot;&gt;List&amp;lt;ContentObject&amp;gt; attachmentList = &lt;span style=&quot;font-weight: bold&quot;&gt;commonExtDAO&lt;/span&gt;.findSuppAttachments(&lt;br&gt;      contractDetail.getContentObject().getExternalId(), contractDetail.getContentObject().getVersion());&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="110" y="1020" width="680" height="70" as="geometry" />
+          <mxGeometry x="100" y="1030" width="680" height="70" as="geometry" />
         </mxCell>
         <mxCell id="LBpAUkLwmhWjywcLZa80-14" value="&lt;pre style=&quot;font-family: &amp;#34;consolas&amp;#34; ; font-size: 8.3pt&quot;&gt;attachmentList.addAll(&lt;span style=&quot;font-weight: bold&quot;&gt;commonExtDAO&lt;/span&gt;.findPrevDecoupleRedlinedAttachments(&lt;br&gt;      contractDetail.getContentObject().getExternalId(), contractDetail.getContentObject().getVersion()));&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="105" y="1190" width="690" height="71" as="geometry" />
+          <mxGeometry x="100" y="1240" width="690" height="71" as="geometry" />
         </mxCell>
         <mxCell id="LBpAUkLwmhWjywcLZa80-15" value="&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;&lt;pre style=&quot;font-family: Consolas; font-size: 8.3pt;&quot;&gt;List&amp;lt;ContentObject&amp;gt; pcmPresalesDocsUploadedByLegal = &lt;span style=&quot;font-weight: bold;&quot;&gt;legalServiceUtil&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: bold;&quot;&gt;      &lt;/span&gt;.getDocsUploadedByLegalOnEngagePcmPresales(contractDetail);&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="60" y="1290" width="750" height="50" as="geometry" />
+          <mxGeometry x="30" y="1610" width="830" height="80" as="geometry" />
         </mxCell>
         <mxCell id="LBpAUkLwmhWjywcLZa80-16" value="&lt;pre style=&quot;font-family: &amp;#34;consolas&amp;#34; ; font-size: 8.3pt&quot;&gt;attachmentList.addAll(pcmPresalesDocsUploadedByLegal);&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="100" y="1380" width="690" height="50" as="geometry" />
+          <mxGeometry x="-1570" y="1450" width="690" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="LBpAUkLwmhWjywcLZa80-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="360" y="1220" as="sourcePoint" />
+            <mxPoint x="360" y="1220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LBpAUkLwmhWjywcLZa80-21" value="&lt;pre style=&quot;font-family: &amp;#34;consolas&amp;#34; ; font-size: 8.3pt&quot;&gt; &lt;span style=&quot;font-weight: bold&quot;&gt;&quot;select rco.name, rco.description, rco.documenttype, u.name, rco.createts, co.version, rco.contentid, u.userid, rco.oid &lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;#34;consolas&amp;#34; ; font-size: 8.3pt&quot;&gt;&lt;span style=&quot;font-weight: bold&quot;&gt;from contract_detail cd , content_object co, legal_entity cle, contract_detail_supp supp, contract_metadata meta, &lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;#34;consolas&amp;#34; ; font-size: 8.3pt&quot;&gt;&lt;span style=&quot;font-weight: bold&quot;&gt;content_object rco, edmuser u &lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;#34;consolas&amp;#34; ; font-size: 8.3pt&quot;&gt;&lt;span style=&quot;font-weight: bold&quot;&gt;where content_objectoid = co.oid  and cd.CUST_LEGALENTITY_OID = cle.oid and supp.CONTRACT_DETAIL_OID = cd.oid and &lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;#34;consolas&amp;#34; ; font-size: 8.3pt&quot;&gt;&lt;span style=&quot;font-weight: bold&quot;&gt;(DECOUPLE_TYPE is null or DECOUPLE_TYPE = &#39;TERM&#39; or DECOUPLE_TYPE = &#39;COMBINED&#39;) and meta.CONTRACT_DETAIL_OID = cd.oid and &lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;#34;consolas&amp;#34; ; font-size: 8.3pt&quot;&gt;&lt;span style=&quot;font-weight: bold&quot;&gt;meta.name = GCHID || &#39;,&#39; || co.VLE_COUNTRY and rco.oid = meta.value and u.userid = rco.userid and co.EXTERNALID = ? and co.version &lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;#34;consolas&amp;#34; ; font-size: 8.3pt&quot;&gt;&lt;span style=&quot;font-weight: bold&quot;&gt;&amp;lt; ? order by co.version &quot;&lt;/span&gt;;&lt;br&gt;&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="37" y="1350" width="830" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="LBpAUkLwmhWjywcLZa80-22" value="&lt;pre style=&quot;font-family: &amp;#34;consolas&amp;#34; ; font-size: 8.3pt&quot;&gt; &lt;span style=&quot;font-weight: bold&quot;&gt;&quot;select co.name, description, documenttype, u.name, co.createts, version, contentid, u.userid, co.keywords, co.oid &lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;#34;consolas&amp;#34; ; font-size: 8.3pt&quot;&gt;&lt;span style=&quot;font-weight: bold&quot;&gt;from content_object co, edmuser u where DOCUMENTTYPE in (&#39;Request Email&#39;,&#39;Approval Email&#39;,&#39;Ref. Redline&#39;,&#39;Inc. Redline&#39;, &#39;Clean&#39;, &#39;SOW&#39;, &#39;PCM Approval Note&#39;) &lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;#34;consolas&amp;#34; ; font-size: 8.3pt&quot;&gt;&lt;span style=&quot;font-weight: bold&quot;&gt;and externalid = ? and (version = ? or docversion  = ?) and co.userid = u.userid order by co.createts&quot;&lt;/span&gt;;&lt;br&gt;&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="10" y="1130" width="970" height="90" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
