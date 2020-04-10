@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-04-10T19:50:47.017Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.92 Safari/537.36" etag="08qMfua-LCtUHvkLL3FO" version="12.9.10" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2020-04-10T19:51:54.307Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.92 Safari/537.36" etag="xjI_x0DHINWDWjrEw5WI" version="12.9.10" type="github" pages="2">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="2676" dy="420" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -186,8 +186,8 @@
         <mxCell id="ALF9PIYN2jSsoPnMfKdn-31" value="yes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="-joiQ_aJ1ymaEgmWdGMt-1">
           <mxGeometry x="330" y="1020" width="40" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="ALF9PIYN2jSsoPnMfKdn-32" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="-joiQ_aJ1ymaEgmWdGMt-1">
-          <mxGeometry x="950" y="770" width="350" height="260" as="geometry" />
+        <mxCell id="ALF9PIYN2jSsoPnMfKdn-32" value="&lt;pre style=&quot;font-family: &amp;#34;consolas&amp;#34; ; font-size: 8.3pt&quot;&gt;&lt;span style=&quot;font-weight: bold&quot;&gt;if&lt;/span&gt;(!StringUtils.&lt;span style=&quot;font-style: italic&quot;&gt;equals&lt;/span&gt;(ReviewContractConstants.&lt;span style=&quot;font-weight: bold ; font-style: italic&quot;&gt;Claim_Task&lt;/span&gt;, reviewContractAction.getActionName())) &lt;span&gt;{&lt;/span&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;span&gt;   &lt;/span&gt;setDisableAndRenderFlags(reviewContractAction, &lt;span style=&quot;font-weight: bold&quot;&gt;true&lt;/span&gt;, &lt;span style=&quot;font-weight: bold&quot;&gt;true&lt;/span&gt;);&lt;br&gt;&lt;span&gt;}&lt;/span&gt;&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="-joiQ_aJ1ymaEgmWdGMt-1">
+          <mxGeometry x="930" y="750" width="690" height="270" as="geometry" />
         </mxCell>
         <mxCell id="ALF9PIYN2jSsoPnMfKdn-33" value="" style="endArrow=classic;html=1;" edge="1" parent="-joiQ_aJ1ymaEgmWdGMt-1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
