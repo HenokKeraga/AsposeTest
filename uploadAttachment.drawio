@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-04-10T17:42:19.247Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.92 Safari/537.36" etag="w71AXfNRhzs16_EZtRrr" version="12.9.10" type="github">
+<mxfile host="app.diagrams.net" modified="2020-04-10T17:54:29.941Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.92 Safari/537.36" etag="BXOmgHBWZYOdtfTCMMmB" version="12.9.10" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="2676" dy="420" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -72,6 +72,12 @@
         </mxCell>
         <mxCell id="LBpAUkLwmhWjywcLZa80-22" value="&lt;pre style=&quot;font-family: &amp;#34;consolas&amp;#34; ; font-size: 8.3pt&quot;&gt; &lt;span style=&quot;font-weight: bold&quot;&gt;&quot;select co.name, description, documenttype, u.name, co.createts, version, contentid, u.userid, co.keywords, co.oid &lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;#34;consolas&amp;#34; ; font-size: 8.3pt&quot;&gt;&lt;span style=&quot;font-weight: bold&quot;&gt;from content_object co, edmuser u where DOCUMENTTYPE in (&#39;Request Email&#39;,&#39;Approval Email&#39;,&#39;Ref. Redline&#39;,&#39;Inc. Redline&#39;, &#39;Clean&#39;, &#39;SOW&#39;, &#39;PCM Approval Note&#39;) &lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;#34;consolas&amp;#34; ; font-size: 8.3pt&quot;&gt;&lt;span style=&quot;font-weight: bold&quot;&gt;and externalid = ? and (version = ? or docversion  = ?) and co.userid = u.userid order by co.createts&quot;&lt;/span&gt;;&lt;br&gt;&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="10" y="1130" width="970" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="LBpAUkLwmhWjywcLZa80-23" value="&lt;pre style=&quot;font-family: &amp;#34;consolas&amp;#34; ; font-size: 8.3pt&quot;&gt;&lt;span style=&quot;font-weight: bold&quot;&gt;&quot;select td from TaskDocument td join fetch td.task ta join fetch ta.activityDetail ad where ad.entityId = ?0 and ta.type in (?1,?2) &lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;#34;consolas&amp;#34; ; font-size: 8.3pt&quot;&gt;&lt;span style=&quot;font-weight: bold&quot;&gt;and td.status = ?3 order by td.oid desc&quot;&lt;/span&gt;;&lt;br&gt;&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="20" y="1720" width="880" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="LBpAUkLwmhWjywcLZa80-24" value="&lt;pre style=&quot;font-family: &amp;#34;consolas&amp;#34; ; font-size: 8.3pt&quot;&gt;attachmentList.addAll(pcmPresalesDocsUploadedByLegal);&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="20" y="1850" width="890" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
