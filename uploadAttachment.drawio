@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-04-10T17:18:37.018Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.92 Safari/537.36" etag="_EUAL2bnqQXrpFUvPmV9" version="12.9.10" type="github">
+<mxfile host="app.diagrams.net" modified="2020-04-10T17:32:28.018Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.92 Safari/537.36" etag="OYardnUT-Vm4ejYc1VDQ" version="12.9.10" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1022" dy="420" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -18,6 +18,48 @@
         </mxCell>
         <mxCell id="LBpAUkLwmhWjywcLZa80-6" value="&lt;pre style=&quot;font-family: &amp;#34;consolas&amp;#34; ; font-size: 8.3pt&quot;&gt;&lt;pre style=&quot;font-family: &amp;#34;consolas&amp;#34; ; font-size: 8.3pt&quot;&gt;VirtualDocument vDoc = (VirtualDocument) contractDetailgetContentObject();&lt;/pre&gt;&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;#34;consolas&amp;#34; ; font-size: 8.3pt&quot;&gt;vz.esm.edm.common.pom.InstructionSheet insDocNode = &lt;span style=&quot;font-weight: bold&quot;&gt;new &lt;/span&gt;vz.esm.edm.common.pom.InstructionSheet();&lt;br&gt;insDocNode.setName(DocName==&lt;span style=&quot;font-weight: bold&quot;&gt;null&lt;/span&gt;?&lt;span style=&quot;font-weight: bold&quot;&gt;&quot;&quot;&lt;/span&gt;:DocName);&lt;br&gt;insDocNode.setContentId(docId);&lt;br&gt;insDocNode.setOrgContentId(docId);&lt;br&gt;insDocNode.setExternalId(vDoc.getExternalId());&lt;br&gt;insDocNode.setDocumentType(DocType);&lt;br&gt;insDocNode&lt;br&gt;      .setBizStatus(EDMConstants.&lt;span style=&quot;font-weight: bold ; font-style: italic&quot;&gt;DOCUMENT_STATUS_AVAILABLE_FOR_EDIT&lt;/span&gt;);&lt;br&gt;&lt;span style=&quot;font-style: italic&quot;&gt;//insDocNode.setUser(vDoc.getUser());&lt;br&gt;&lt;/span&gt;insDocNode.setCreateTimestamp(&lt;span style=&quot;font-weight: bold&quot;&gt;new &lt;/span&gt;Date());&lt;br&gt;insDocNode.setModifiedTimestamp(&lt;span style=&quot;font-weight: bold&quot;&gt;new &lt;/span&gt;Date());&lt;br&gt;insDocNode.setDocumentNo(DocNo);&lt;br&gt;insDocNode.setTitle(DocName==&lt;span style=&quot;font-weight: bold&quot;&gt;null&lt;/span&gt;?&lt;span style=&quot;font-weight: bold&quot;&gt;&quot;&quot;&lt;/span&gt;:DocName);&lt;br&gt;insDocNode.setUser(userId);&lt;br&gt;insDocNode.setVersion(&lt;span style=&quot;font-weight: bold&quot;&gt;&quot;00&quot;&lt;/span&gt;);&lt;br&gt;insDocNode.setIsautogen(&lt;span style=&quot;font-weight: bold&quot;&gt;true&lt;/span&gt;);&lt;br&gt;&lt;br&gt;Set docSet = vDoc.getContentObjects();&lt;br&gt;docSet.add(insDocNode);&lt;br&gt;vDoc.setContentObjects(docSet);&lt;br&gt;&lt;span style=&quot;font-weight: bold&quot;&gt;contractDao&lt;/span&gt;.updateObject(insDocNode);&lt;br&gt;&lt;span style=&quot;font-weight: bold&quot;&gt;contractDao&lt;/span&gt;.updateObject(vDoc);&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="110" y="460" width="640" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="LBpAUkLwmhWjywcLZa80-7" value="" style="endArrow=classic;html=1;exitX=0.454;exitY=0.994;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.341;entryY=-0.017;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="LBpAUkLwmhWjywcLZa80-2" target="LBpAUkLwmhWjywcLZa80-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="330" y="200" as="sourcePoint" />
+            <mxPoint x="380" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LBpAUkLwmhWjywcLZa80-8" value="" style="endArrow=classic;html=1;entryX=0.344;entryY=-0.094;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" target="LBpAUkLwmhWjywcLZa80-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="320" y="250" as="sourcePoint" />
+            <mxPoint x="360" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LBpAUkLwmhWjywcLZa80-9" value="" style="endArrow=classic;html=1;exitX=0.365;exitY=1.106;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.388;entryY=-0.028;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="LBpAUkLwmhWjywcLZa80-4" target="LBpAUkLwmhWjywcLZa80-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="390" as="sourcePoint" />
+            <mxPoint x="430" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LBpAUkLwmhWjywcLZa80-10" value="" style="endArrow=classic;html=1;exitX=0.381;exitY=1.061;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.432;entryY=-0.018;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="LBpAUkLwmhWjywcLZa80-5" target="LBpAUkLwmhWjywcLZa80-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="360" y="490" as="sourcePoint" />
+            <mxPoint x="410" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LBpAUkLwmhWjywcLZa80-11" value="&lt;span style=&quot;font-family: &amp;#34;open sans&amp;#34; , sans-serif ; font-size: 13px&quot;&gt;getSupplementalAttachments&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="270" y="880" width="260" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="LBpAUkLwmhWjywcLZa80-12" value="&lt;pre style=&quot;font-family: &amp;#34;consolas&amp;#34; ; font-size: 8.3pt&quot;&gt;ContractDetail contractDetail = &lt;span style=&quot;font-weight: bold&quot;&gt;e2eContractDAO&lt;/span&gt;.findContractDetailByLegalDocId(contractId);&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="70" y="950" width="970" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LBpAUkLwmhWjywcLZa80-13" value="&lt;pre style=&quot;font-family: &amp;#34;consolas&amp;#34; ; font-size: 8.3pt&quot;&gt;List&amp;lt;ContentObject&amp;gt; attachmentList = &lt;span style=&quot;font-weight: bold&quot;&gt;commonExtDAO&lt;/span&gt;.findSuppAttachments(&lt;br&gt;      contractDetail.getContentObject().getExternalId(), contractDetail.getContentObject().getVersion());&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="110" y="1020" width="680" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="LBpAUkLwmhWjywcLZa80-14" value="&lt;pre style=&quot;font-family: &amp;#34;consolas&amp;#34; ; font-size: 8.3pt&quot;&gt;attachmentList.addAll(&lt;span style=&quot;font-weight: bold&quot;&gt;commonExtDAO&lt;/span&gt;.findPrevDecoupleRedlinedAttachments(&lt;br&gt;      contractDetail.getContentObject().getExternalId(), contractDetail.getContentObject().getVersion()));&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="105" y="1190" width="690" height="71" as="geometry" />
+        </mxCell>
+        <mxCell id="LBpAUkLwmhWjywcLZa80-15" value="&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;&lt;pre style=&quot;font-family: Consolas; font-size: 8.3pt;&quot;&gt;List&amp;lt;ContentObject&amp;gt; pcmPresalesDocsUploadedByLegal = &lt;span style=&quot;font-weight: bold;&quot;&gt;legalServiceUtil&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: bold;&quot;&gt;      &lt;/span&gt;.getDocsUploadedByLegalOnEngagePcmPresales(contractDetail);&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="60" y="1290" width="750" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="LBpAUkLwmhWjywcLZa80-16" value="&lt;pre style=&quot;font-family: &amp;#34;consolas&amp;#34; ; font-size: 8.3pt&quot;&gt;attachmentList.addAll(pcmPresalesDocsUploadedByLegal);&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="100" y="1380" width="690" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
