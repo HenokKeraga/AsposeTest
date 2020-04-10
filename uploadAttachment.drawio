@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-04-10T19:30:03.451Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.92 Safari/537.36" etag="W5MMDBrODuowdvkeFY7d" version="12.9.10" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2020-04-10T19:50:47.017Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.92 Safari/537.36" etag="08qMfua-LCtUHvkLL3FO" version="12.9.10" type="github" pages="2">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="2676" dy="420" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -159,16 +159,11 @@
             <mxPoint x="750" y="690" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ALF9PIYN2jSsoPnMfKdn-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="-joiQ_aJ1ymaEgmWdGMt-1" source="ALF9PIYN2jSsoPnMfKdn-23">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="365" y="1020" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="ALF9PIYN2jSsoPnMfKdn-23" value="&lt;pre style=&quot;font-family: &amp;#34;consolas&amp;#34; ; font-size: 8.3pt&quot;&gt;&lt;span style=&quot;font-weight: bold&quot;&gt;boolean &lt;/span&gt;isEnableNonStdContractAppLink = isEnableNonStdContractAppLink(nonStdTasks);&lt;br&gt;&lt;span style=&quot;font-weight: bold&quot;&gt;boolean &lt;/span&gt;enableApproveLinksByNonStdTasks = isEnableApproveLinksByNonStdTasks(nonStdTasks);&lt;br&gt;&lt;span style=&quot;font-weight: bold&quot;&gt;boolean &lt;/span&gt;disableApproveLinkForUnifiedAmend = isDisableApproveLinkForUnifiedAmend(nonStdTasks,&lt;br&gt;      contractDetailSupp, unifiedAmendment);&lt;br&gt;&lt;span style=&quot;font-weight: bold&quot;&gt;boolean &lt;/span&gt;dmvl102Switch = getPreferenceSwitchValue(EDMConstants.&lt;span style=&quot;font-weight: bold ; font-style: italic&quot;&gt;DMVL_102_SWITCH&lt;/span&gt;);&lt;br&gt;&lt;span style=&quot;font-weight: bold&quot;&gt;boolean &lt;/span&gt;pcmApprovalNoteMailSent = dmvl102Switch&lt;br&gt;      ? checkContractMetaData(docId, EDMConstants.&lt;span style=&quot;font-weight: bold ; font-style: italic&quot;&gt;PENDING_PCM_APPROVAL_NOTE_MAIL_SENT&lt;/span&gt;)&lt;br&gt;      : &lt;span style=&quot;font-weight: bold&quot;&gt;false&lt;/span&gt;;&lt;br&gt;      &lt;span style=&quot;font-weight: bold&quot;&gt;boolean &lt;/span&gt;reworkLPAmendment = isReworkLPAmendment(docId);&lt;br&gt;&lt;span style=&quot;font-weight: bold&quot;&gt;boolean &lt;/span&gt;disapprovedByNonStdApprover = disapprovedByNonStdApprovers(disableApproveLinkForUnifiedAmend, contractDetailSupp, reworkLPAmendment,docId);    &lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="-joiQ_aJ1ymaEgmWdGMt-1">
-          <mxGeometry x="-90" y="790" width="880" height="200" as="geometry" />
+          <mxGeometry x="-70" y="1070" width="880" height="200" as="geometry" />
         </mxCell>
         <mxCell id="ALF9PIYN2jSsoPnMfKdn-26" value="&lt;pre style=&quot;font-family: &amp;#34;consolas&amp;#34; ; font-size: 8.3pt&quot;&gt;reviewContractActionList.stream().forEach(reviewContractAction -&amp;gt; &lt;span&gt;{&lt;/span&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;span&gt;   &lt;/span&gt;setDisableAndRenderFlagsByAction(reviewContractAction, &lt;span&gt;isEnableNonStdContractAppLink&lt;/span&gt;,&lt;br&gt;         &lt;span&gt;enableApproveLinksByNonStdTasks&lt;/span&gt;, &lt;span&gt;disableApproveLinkForUnifiedAmend&lt;/span&gt;,&lt;br&gt;         &lt;span&gt;pcmApprovalNoteMailSent&lt;/span&gt;,&lt;span&gt;disapprovedByNonStdApprover&lt;/span&gt;);&lt;br&gt;&lt;span&gt;}&lt;/span&gt;);&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="-joiQ_aJ1ymaEgmWdGMt-1">
-          <mxGeometry x="-90" y="1020" width="910" height="100" as="geometry" />
+          <mxGeometry x="-100" y="1300" width="910" height="100" as="geometry" />
         </mxCell>
         <mxCell id="ALF9PIYN2jSsoPnMfKdn-27" value="plus" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="-joiQ_aJ1ymaEgmWdGMt-1">
           <mxGeometry x="290" y="760" width="40" height="20" as="geometry" />
@@ -178,6 +173,30 @@
             <mxPoint x="200" y="740" as="sourcePoint" />
             <mxPoint x="250" y="690" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="ALF9PIYN2jSsoPnMfKdn-29" value="&lt;pre style=&quot;font-family: &amp;#34;consolas&amp;#34; ; font-size: 8.3pt&quot;&gt;&lt;span style=&quot;font-weight: bold&quot;&gt;null &lt;/span&gt;!= activityDetail.getAssignee()&lt;br&gt;      &amp;amp;&amp;amp; StringUtils.&lt;span style=&quot;font-style: italic&quot;&gt;isNotEmpty&lt;/span&gt;(activityDetail.getAssignee().getUserid())&lt;br&gt;      &amp;amp;&amp;amp; StringUtils.&lt;span style=&quot;font-style: italic&quot;&gt;equals&lt;/span&gt;(activityDetail.getAssignee().getUserid(), currentUserId&lt;/pre&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="-joiQ_aJ1ymaEgmWdGMt-1">
+          <mxGeometry x="25" y="810" width="575" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="ALF9PIYN2jSsoPnMfKdn-30" value="" style="endArrow=classic;html=1;exitX=0.459;exitY=0.982;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.419;entryY=-0.008;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="-joiQ_aJ1ymaEgmWdGMt-1" source="ALF9PIYN2jSsoPnMfKdn-29" target="ALF9PIYN2jSsoPnMfKdn-23">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="290" y="1070" as="sourcePoint" />
+            <mxPoint x="340" y="1020" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ALF9PIYN2jSsoPnMfKdn-31" value="yes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="-joiQ_aJ1ymaEgmWdGMt-1">
+          <mxGeometry x="330" y="1020" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ALF9PIYN2jSsoPnMfKdn-32" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="-joiQ_aJ1ymaEgmWdGMt-1">
+          <mxGeometry x="950" y="770" width="350" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="ALF9PIYN2jSsoPnMfKdn-33" value="" style="endArrow=classic;html=1;" edge="1" parent="-joiQ_aJ1ymaEgmWdGMt-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="630" y="910" as="sourcePoint" />
+            <mxPoint x="930" y="900" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ALF9PIYN2jSsoPnMfKdn-34" value="NO" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="-joiQ_aJ1ymaEgmWdGMt-1">
+          <mxGeometry x="710" y="860" width="40" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
